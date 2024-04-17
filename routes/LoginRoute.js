@@ -20,3 +20,4 @@ router.post("/alunos/save", ExercicioController.addAluno)
 
 module.exports = router
 
+//NÃO PODE SER A MEMSA ROTA, UMA PARA FORM E OUTRA PARA POST
