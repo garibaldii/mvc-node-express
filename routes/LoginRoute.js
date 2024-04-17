@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
+const loginController = require('../controllers/loginController')
 
-router.get("/login", (req, res) => {
-    res.send('<h1>Login<h1>')
-})
+
+
+router.get("/login", loginController.getLogin)
+
+
+router.get("/logged", loginController.getLogged)
 
 module.exports = router
 
